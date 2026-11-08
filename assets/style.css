@@ -1,0 +1,26 @@
+@font-face { font-family: "Lilita One"; src: url("fonts/LilitaOne-Regular.ttf") format("truetype"); font-display: swap; }
+:root { --fudge: #6e4029; --strawberry: #ff80ad; --cream: #fff7e6; --ink: #3b2a20; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--ink); line-height: 1.55;
+  background: #f3dfb7 url("img/waffle.jpg") repeat; background-size: 240px; }
+header { background: var(--fudge); color: var(--cream); padding: 14px 20px; }
+header a { color: var(--cream); text-decoration: none; }
+.brand { font-family: "Lilita One", sans-serif; font-size: 28px; letter-spacing: 1px; }
+nav { float: right; margin-top: 8px; }
+nav a { margin-left: 18px; }
+main { max-width: 860px; margin: 28px auto; padding: 0 16px; }
+.card { background: var(--cream); border: 3px solid var(--fudge); border-radius: 18px; padding: 24px 28px; margin-bottom: 24px; box-shadow: 0 5px 0 rgba(110,64,41,0.35); }
+h1, h2 { font-family: "Lilita One", sans-serif; font-weight: normal; color: var(--strawberry);
+  -webkit-text-stroke: 1.5px var(--fudge); paint-order: stroke fill; text-shadow: 0 3px 0 var(--fudge); letter-spacing: 1px; margin: 0 0 12px; }
+h1 { font-size: 44px; } h2 { font-size: 30px; }
+h3 { color: var(--fudge); margin-bottom: 4px; }
+a { color: #b8336a; }
+.game { display: flex; gap: 20px; align-items: center; }
+.game img { width: 120px; height: 120px; border-radius: 24px; border: 3px solid var(--fudge); }
+.banner { width: 100%; border-radius: 14px; border: 3px solid var(--fudge); }
+.shots { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 6px; }
+.shots img { width: 180px; border-radius: 12px; border: 3px solid var(--fudge); }
+.btn { display: inline-block; background: var(--strawberry); color: #fff; font-weight: bold; padding: 10px 18px; border-radius: 12px; border: 3px solid var(--fudge); text-decoration: none; }
+footer { text-align: center; color: var(--cream); background: var(--fudge); padding: 14px; font-size: 14px; }
+footer a { color: var(--cream); }
+@media (max-width: 560px) { .game { flex-direction: column; text-align: center; } h1 { font-size: 34px; } nav { float: none; display: block; } nav a { margin: 0 14px 0 0; } }
